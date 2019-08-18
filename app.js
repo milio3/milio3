@@ -3,6 +3,7 @@ var idCampoTexto="campoTexto";
 var caracteresCampo=10;
 var nombreArchivo="formulario.txt";
 var secuencial=0;
+var ind20="M";
 
 function prepararFormulario(){
 	for(var i=0;i< listaIdCampos.length;i++){
@@ -14,7 +15,7 @@ function anyadirLinea(){
 	var nuevaLinea="";
   secuencial++;
 	listaIdCampos[14]=secuencial+secuencial;
-	listaIdCampos[17]="M";
+	listaIdCampos[17]=ind20;
 	for(var i=0;i< listaIdCampos.length;i++){
 		var valorCampo=document.getElementById(listaIdCampos[i]).value;
 		while(valorCampo.length<50){
