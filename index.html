@@ -6,15 +6,20 @@
 
 	<body onload="prepararFormulario();">
 		<h1>FORMAT0P</h1>
+
 			<div label="fechas" name="fechas">
 				<label>FECHAMOV</label><input type="text" maxlength="8"     size="8"   id="fechamov">
 				<label>FECHAYER</label><input type="text" maxlength="8"     size="8"   id="fechayer">
 			</div>
-      <div label="registro20" name="reg20">
+
+		  <div label="registro20" name="reg20">
 				<label>ENTIDAD</label><input type="text" maxlength="4"      size="4"   id="cod_nrbe_en">
 				<label>ID INTERNO</label><input type="text" maxlength="10"  size="10"  id="id_interno_pe">
 				<label>COD PERS</label><input list="cod_pe" maxlength="1"   size="1"   id="cod_pe" name="cod_pe"/>
-						                             	<datalist><option value="F"><option value="J"></datalist>
+						                             	<datalist id="cod_pe">
+																						<option value="F">
+																						<option value="J">
+																					</datalist>
 			  <label>NOMBRE</label>   <input type="text" maxlength="178"  size="178" id="nomb_50">
 			  <label>FNACIM</label>   <input type="text" maxlength="10"   size="10"  id="fnacim">
 				<label>PAISNAC</label>  <input type="text" maxlength="2"    size="2"   id="paisnac">
@@ -23,24 +28,28 @@
 				<label>DOCUMENTO</label><input type="text" maxlength="30"   size="30"  id="id_ext_pe">
 				<label>PAISEXP</label>  <input type="text" maxlength="2"    size="2"   id="pais_exp">
 			</div>
+
 			<div label="registro21" name="reg21">
 				<label>NOMBRE NEW</label><input type="text" maxlength="178" size="178" id="nomb_n">
 				<label><input type="radio" name="ind21" value="A"> A	</label>
 				<label><input type="radio" name="ind21" value="M"> M	</label>
 				<label><input type="radio" name="ind21" value="X"> X	</label>
 			</div>
+
 			<div label="registro22" name="reg22">
 				<label>TDOC NEW </label><input type="text" maxlength="2"    size="2"   id="tdoc_n">
 				<label>DOC NEW </label><input type="text" maxlength="30"    size="30"  id="id_ext_pe_n">
 				<label>PAISEXP NEW </label><input type="text" maxlength="2" size="2"   id="pais_exp_n">
 				<label><input type="radio" name="ind22" value="A"> A </label>
-				<label><input type="radio" name="ind22" value="M"> M	</label>
-				<label><input type="radio" name="ind22" value="X"> X	</label>
+				<label><input type="radio" name="ind22" value="M"> M </label>
+				<label><input type="radio" name="ind22" value="X"> X </label>
 			</div>
+
 		  <div label="fichero" name="cajafichero">
 	  		<textarea cols="500" id="campoTexto" disabled></textarea>
   			<button onClick="anyadirLinea()">Añadir Linea</button>
 				<button onClick="crearArchivo()">Crear archivo</button>
 		 	</div>
+
 	</body>
 </html>
