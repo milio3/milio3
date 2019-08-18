@@ -1,4 +1,4 @@
-var listaIdCampos=["cod_nrbe_en","id_interno_pe","nomb_50","tdoc","id_ext_pe","pais_exp","fnacim","paisnac","paisres","nomb_n","tdoc_n","id_ext_pe_n","pais_exp_n","cod_pe","secuencial","fechamov","fechayer","ind21","ind22"];
+var listaIdCampos=["cod_nrbe_en","id_interno_pe","nomb_50","tdoc","id_ext_pe","pais_exp","fnacim","paisnac","paisres","nomb_n","tdoc_n","id_ext_pe_n","pais_exp_n","cod_pe","secuencial","fechamov","fechayer","ind20	","ind21","ind22"];
 var idCampoTexto="campoTexto";
 var caracteresCampo=10;
 var nombreArchivo="formulario.txt";
@@ -13,6 +13,8 @@ function prepararFormulario(){
 function anyadirLinea(){
 	var nuevaLinea="";
   secuencial++;
+	listaIdCampos[14]=secuencial+secuencial;
+	listaIdCampos[17]="M";
 	for(var i=0;i< listaIdCampos.length;i++){
 		var valorCampo=document.getElementById(listaIdCampos[i]).value;
 		while(valorCampo.length<50){
